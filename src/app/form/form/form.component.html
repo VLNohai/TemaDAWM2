@@ -1,0 +1,28 @@
+<form #result="ngForm" (ngSubmit)="sentToParent(result)">
+    <h4>Photo URL</h4>
+    <input nz-input placeholder="URL" name="photo" ngModel required />
+    
+    <h4>Brand</h4>
+    <input nz-input placeholder="brand..." name="brand" ngModel required/>
+    
+    <h4>Body Shape</h4>
+    <input nz-input placeholder="shape..." name="shape" ngModel required />
+    
+    <h4>Color/Pattern</h4>
+    <input nz-input placeholder="color..." name="color" ngModel required />
+    
+    <h4>Retails For</h4>
+    <input nz-input placeholder="price..." type="number" name="price" ngModel required />
+    
+    <label>
+      <input type="radio" name="type" value="Electric" ngModel required>
+      Electric
+    </label>
+    
+    <label>
+      <input type="radio" name="type" value="Acoustic" ngModel required>
+      Acoustic
+    </label>
+    <button nz-button nzType="primary" type="submit" [disabled]="!result.valid" 
+    [textContent]="result.valid? 'submit' : (result.controls['price'].errors?.['isNaN']  ? 'Invalid number as price' : 'All fields Required')"></button>
+  </form>

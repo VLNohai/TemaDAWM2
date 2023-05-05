@@ -1,0 +1,98 @@
+[
+    {
+        "photo" : "https://img.kytary.com/eshop_ro/stredni_v4x/na/636711395219530000/02631188/64534411/epiphone-1958-explorer-gothic.jpg",
+        "brand" : "Epiphone",
+        "shape" : "Explorer",
+        "color" : "Black",
+        "price" : 500,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://www.soundcreation.ro/admin/uploads/images/cms_products/module_24098/49309.jpg",
+        "brand" : "Epiphone",
+        "shape" : "Dreadnought",
+        "color" : "Sunburst",
+        "price" : 180,
+        "type" : "Acoustic"
+    },
+    {
+        "photo" : "https://www.fmicassets.com/Damroot/ZoomJpg/10003/0143001700_gtr_frt_001_rr.jpg",
+        "brand" : "Fender",
+        "shape" : "Jaguar",
+        "color" : "Sunburst",
+        "price" : 1200,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://www.fmicassets.com/Damroot/Zoom/10001/9235000564_gtr_frt_001_rr.png",
+        "brand" : "Fender",
+        "shape" : "Telecaster",
+        "color" : "Cherry",
+        "price" : 800,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://m.media-amazon.com/images/I/71hTltGr2tL._AC_UF894,1000_QL80_.jpg",
+        "brand" : "Fender",
+        "shape" : "Dreadnought",
+        "color" : "Natural",
+        "price" : 350,
+        "type" : "Acoustic"
+    },
+    {
+        "photo" : "https://m.media-amazon.com/images/I/616XbYqt4QS.jpg",
+        "brand" : "Jackson",
+        "shape" : "Super-ST",
+        "color" : "Black",
+        "price" : 600,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://m.media-amazon.com/images/I/71hp9j6k72S.jpg",
+        "brand" : "Jackson",
+        "shape" : "Flying-V",
+        "color" : "Red",
+        "price" : 700,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://www.ibanez.com/common/product_artist_file/file/p_region_QX52_BKF_1P_01.png",
+        "brand" : "Ibanez",
+        "shape" : "Headless",
+        "color" : "Black",
+        "price" : 1400,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://s3.bukalapak.com/uploads/content_attachment/3246799446730bc2b76e6bb5/original/Ibanez_RG_-_sumber_Ibanez.png",
+        "brand" : "Ibanez",
+        "shape" : "Super-ST",
+        "color" : "Black-Burst",
+        "price" : 650,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://www.ibanez.com/common/product_artist_file/file/p_region_AAD300CE_LGS_1X_03.png",
+        "brand" : "Ibanez",
+        "shape" : "Dreadnought",
+        "color" : "Natural",
+        "price" : 550,
+        "type" : "Acoustic"
+    },
+    {
+        "photo" : "https://p1.akcdn.net/full/462959585.prs-guitars-se-custom-24-floyd.jpg",
+        "brand" : "PRS",
+        "shape" : "SE",
+        "color" : "Black-Tiger",
+        "price" : 1500,
+        "type" : "Electric"
+    },
+    {
+        "photo" : "https://www.solar-guitars.com/wp-content/uploads/2020/07/E1.6-Priestess-FRONT-HORIZONTAL.png.webp",
+        "brand" : "Solar",
+        "shape" : "Priestess",
+        "color" : "White",
+        "price" : 1100,
+        "type" : "Electric"
+    }
+]

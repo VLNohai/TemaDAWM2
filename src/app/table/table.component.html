@@ -1,0 +1,46 @@
+<nz-table #basicTable [nzData]="dataSet" [nzPageSize]="8" [nzShowPagination]="true" [nzPageIndex]="pageIndex">
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>Brand</th>
+      <th>Shape</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th>Amplification</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data; let i = index">
+      <td>
+        <div>
+          <img class="guitar-img" [src]="data.guitar.photo">
+        </div>
+      </td>
+      <td>{{data.guitar.brand}}</td>
+      <td>{{data.guitar.shape}}</td>
+      <td>{{data.guitar.color}}</td>
+      <td>{{data.guitar.price | money}}</td>
+      <td>
+        <span nz-icon [nzType]="data.guitar.type == 'Electric' ? 'api' : 'sound'" nzTheme="outline"></span>
+      </td>
+      <td>
+        <div *ngIf="data.visible">
+          <nz-modal [nzFooter]="null" [(nzVisible)]="data.visible" [nzTitle]="data.guitar.brand + ' ' + data.guitar.shape" (nzOnCancel)="data.visible = false" (nzOnOk)="data.visible = false">
+            <ng-container *nzModalContent>
+              <app-form (submit)="getFormValue($event, i)" [guitar]="data.guitar"></app-form>
+            </ng-container>
+          </nz-modal>
+        </div>
+        <button nz-button nzType="primary" (click)="data.visible = true">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="7">
+        <nz-pagination [nzPageSize]="8" [nzTotal]="dataSet.length" (nzPageIndexChange)="pageChanged($event)"></nz-pagination>
+      </td>
+    </tr>
+  </tfoot>
+</nz-table>
